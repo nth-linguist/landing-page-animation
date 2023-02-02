@@ -6,8 +6,11 @@ body
   height:100%;
   margin:0em 5%;
   background-color:#8ec1da;
-  background-image: url("./images/scroll_bg.png");
+  background-image: url("../images/scroll_bg.png");
   background-position: center bottom;
+  background-attachment: fixed;
+  background-size: 700%;
+  /* ^ maybe there's a better way to do this! */
   animation: animatedBackground 30s linear infinite;
   /* Safari and Chrome: */
   -webkit-animation: animatedBackground 30s linear infinite;
@@ -22,6 +25,7 @@ body
   from { background-position: 0 100%; }
   to { background-position: 100% 100%; }
 }
+
 #content
 {
   position:fixed;
