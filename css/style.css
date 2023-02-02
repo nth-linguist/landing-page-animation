@@ -1,9 +1,11 @@
 /* Background Animation */
 
-body
-{
-  width: 95%; 
-  height:100%;
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95vw; 
+  height:60vw;
   margin:0em 5%;
   background-color:#c9094f;
   background-image: url("../images/scroll_bg.png");
@@ -15,6 +17,33 @@ body
   /* Safari and Chrome: */
   -webkit-animation: animatedBackground 30s linear infinite;
 }
+
+/* Navigation */
+
+nav{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(244, 198, 30,0.0);
+  /* border: 5px solid;
+  border-color: rgb(71, 102, 212); */
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: underline;
+  gap: 35px;
+  color: rgb(47, 144, 230);
+  font-family: 'Pokemon Solid', sans-serif;
+  list-style: none;
+  font-size: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 @keyframes animatedBackground 
 {
   from { background-position: 0 100%; }
@@ -25,9 +54,7 @@ body
   from { background-position: 0 100%; }
   to { background-position: 100% 100%; }
 }
-
-#content
-{
+#tagline{
   position:fixed;
   bottom:5em;
   height:1em;
@@ -40,10 +67,113 @@ body
    border-top-left-radius: 5em;
   -webkit-border-top-left-radius: 5em;
 }
+/* Footer + pokeball*/
+.copyright {
+  font-size: 30px;
+  font-family: 'Pokemon Solid', sans-serif;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 1em;
+  }
+.copyright > img {
+    transform: translateY(0, 0);
+    animation: moveball 3s infinite;
+  }
+  @keyframes moveball {
+     0% {transform: translateX(0) ;}
+     50% {transform: translateX(50px) ;}
+     100% {transform: translateX(0) ;}
+  }
 
 
 
+   /* Pikachu CSS */
 
+   .pikachu-animation-container {
+    height: 100px;
+    width: 100px;
+    border-style: dashed;
+    position: fixed;
+    position: fixed;
+    bottom: 5em;
+}
+.pikachu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    transform: translateX(0);
+    animation: sideBall 5s infinite;
+}
+
+@keyframes sideBall {
+  0%   {transform: translateX(0vw);}
+  50%  {transform: translateX(85vw);}
+  100% {transform: translateX(0vw);}
+}
+
+/* Charmander css */
+.charmander {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  /* position: fixed; */
+  /* bottom: 5em; */
+  /* transform: translateX(0); */
+  /* animation: sideBall 5s infinite; */
+}
+
+/****** Birds amination *********/
+
+.bird { 
+  width: 85px;
+  height: 85px;
+}
+
+#bird1{
+  animation-name: example;
+  animation-duration: 4s;
+  animation:example 6s linear 2s infinite alternate;
+  animation-name: move-bird1;
+}
+
+@keyframes move-bird1 {
+  
+  15%  {transform: translate(40%, 90%);}
+  35%  {transform: translate(50%, 120%);}
+  50%  {transform: translate(80%, 100%);}
+  100% {transform: translate(60%, 110%);}
+}
+#bird2{
+    
+  animation-duration: 2s;
+  animation:example 5s linear 2s infinite alternate;
+  animation-name: move-bird2;
+}
+@keyframes move-bird2 {
+  
+  35%  {transform: translate(750%, 120%);}
+  50%  {transform: translate(90%, 190%);}
+  25%  {transform: translate(60%, 180%);}
+  100% {transform: translate(60%, 110%);}
+}
+#bird3{
+  
+  animation-duration: 13s;
+  animation:example 5s linear 3s infinite alternate;
+  animation-name: move-bird3;
+}
+@keyframes move-bird3 {
+  
+  15%  {transform: translate(50%, 320%);}
+  50%  {transform: translate(90%, 190%);}
+  25%  {transform: translate(30%, 180%);}
+  100% {transform: translate(60%, 110%);}
+}
 
 
 
