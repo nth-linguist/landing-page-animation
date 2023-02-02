@@ -15,3 +15,21 @@ For example, choose a basketball team. You can animate the ball bouncing into st
 
 Or an airline - a plane coming in to land.
 
+#GROUP SOLUTION
+
+Co-authored-by: CharlieWolfenden <CharlieWolfenden@users.noreply.github.com>
+Co-authored-by: Niti1990 <Niti1990@users.noreply.github.com>
+Co-authored-by: Hullah <hu11ah@users.noreply.github.com>
+Co-authored-by: Elena Gospodinova <ElenaGospodinova@users.noreply.github.com>
+Co-authored-by: Mojo213 <Mojo213@users.noreply.github.com>
+Co-authored-by: bee-gg <bee-gg@users.noreply.github.com>
+
+Idea
+
+Pokemon Zoo with animated sprites.
+Sidescrolling background - 'Parallax Scrolling' effect: <https://en.wikipedia.org/wiki/Parallax_scrolling>.
+Top / mid / bottom rows divisions of viewport.
+
+Live demo @ 14:30 02Feb2023
+https://www.awesomescreenshot.com/video/14487365
+
